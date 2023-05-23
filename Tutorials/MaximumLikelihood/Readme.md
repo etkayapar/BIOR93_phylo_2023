@@ -14,7 +14,7 @@ Go into the iqtree folder in your terminal as you did for the [previous tutorial
 
 **Command reference**
 
-`./iqtree`: will call the executable
+`iqtree`: will call the executable
 
 `-s <Alignment-file.phy>`: this option points your alignment to the program.
 
@@ -33,7 +33,7 @@ Go into the iqtree folder in your terminal as you did for the [previous tutorial
 
 
 ```
-./iqtree -s ATP6_COI_CytB_ND5.phy
+iqtree -s ATP6_COI_CytB_ND5.phy
 ```
 
 
@@ -43,13 +43,13 @@ In this case, IQTREE will infer a tree from a sequence alignment (file.phy) with
 2. However, to find best partition scheme by possibly merging partitions, followed by tree inference and branch support run an analysis by entering
 
 ```
-./iqtree -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m MFP+MERGE -B 1000 -alrt 1000 --prefix tree_inference -bnni
+iqtree -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m MFP+MERGE -B 1000 -alrt 1000 --prefix tree_inference -bnni
 ```
 
 
 You should have something similar to this:
 
-<p align="center"><img src="./IQTREEb.png" alt="IQTREEb" width="600"></p>
+<p align="center"><img src="IQTREEb.png" alt="IQTREEb" width="600"></p>
 
 **Congratulations! now that you have run the analyses, compare the results.**
 
@@ -77,7 +77,7 @@ You should have something similar to this:
 
 Open the file `.treefile` retrieved from IQTREE and check the support values. You can open such a file in FigTree. The phylogeny should look more or less as shown in the next screenshot.
 
-<p align="center"><img src="./IQTREEc.png" alt="IQTREEc" width="600"></p>
+<p align="center"><img src="IQTREEc.png" alt="IQTREEc" width="600"></p>
 
 The tree is rooted by default on the first taxon in your dataset or on the longest branch in the dataset. In our case we should reroot the tree on the branch leading to *Hyaena and mongooses* (which is our outgroup). In FigTree, click on the branch leading to *Hyaena and mongooses* to select it, and then click on the "Reroot" button in FigTree.
 
@@ -96,7 +96,7 @@ The tree is rooted by default on the first taxon in your dataset or on the longe
 
 **Tree inference on Website (optional if you have not downloaded IQTREE)**
 
-You can also to try out the IQ-TREE [web server](http://iqtree.cibiv.univie.ac.at/), where you only need to upload an alignment, choose the options and start the analysis.You can either try out the web server with an example alignment by ticking the corresponding box or upload your own alignment file. By clicking on ‘Browse’ a dialog will open where you can select your MSA; the file formats Phylip, Fasta, Nexus, Clustal and MSF are supported.
+You can also to try out the IQ-TREE [web server](http:iqtree.cibiv.univie.ac.at/), where you only need to upload an alignment, choose the options and start the analysis.You can either try out the web server with an example alignment by ticking the corresponding box or upload your own alignment file. By clicking on ‘Browse’ a dialog will open where you can select your MSA; the file formats Phylip, Fasta, Nexus, Clustal and MSF are supported.
 
 <p align="center"><img src="http://www.iqtree.org/doc/images/tut1.png" alt="IQTREE" width="600"></p>
 

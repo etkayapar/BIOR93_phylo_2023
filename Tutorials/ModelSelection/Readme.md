@@ -48,7 +48,7 @@ You should have this partition file from Tutorial 2. It should be called `Gene_p
 We will start by typing the following command and running it by hitting enter.
 
 ```
-./iqtree -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m TESTMERGEONLY --prefix first
+iqtree -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m TESTMERGEONLY --prefix first
 
 ```
 
@@ -62,13 +62,13 @@ Here,we are:
 Above settings for model selection will only consider the invariable site and Gamma rate heterogeneity. If you want to consider the FreeRate heterogeneity model too, then run:
 
 ```
-./iqtree -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m MF+MERGE --prefix second
+iqtree -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m MF+MERGE --prefix second
 
 ```
 
 As a third option, if you want to restrict your model search to only those models supported by a specific program (Mr Bayes in our case), then run:
 ```
-./iqtree -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m TESTMERGEONLY -mset mrbayes --prefix third
+iqtree -s ATP6_COI_CytB_ND5.phy -p Gene_partitions.txt -m TESTMERGEONLY -mset mrbayes --prefix third
 
 ```
 
