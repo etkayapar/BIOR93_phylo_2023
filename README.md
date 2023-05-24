@@ -56,7 +56,7 @@ Here are deposited the instructions for the assignments and exercises.
  
  (7) [Tree manipulation](./Tutorials/TreeManipulation/)
  
- (8) [Assignment](./Tutorials/Assignment) : Choose a row to put your name in. Marked genes in that row will be part of your assignment for this course.
+ (8) [Assignment](./Tutorials/Assignment)
  
 
 
