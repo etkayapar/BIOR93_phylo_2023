@@ -56,6 +56,8 @@ Here are deposited the instructions for the assignments and exercises.
  
  (7) [Tree manipulation](./Tutorials/TreeManipulation/)
  
+ (8) [Assignment](https://docs.google.com/spreadsheets/d/1rFkAeei_6dFn8auxJxbzCpq7qABZjHXpByE32seXyQQ/edit?usp=sharing)
+ 
 
 
 ### [Programs used in the tutorials](./Software/)
